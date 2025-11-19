@@ -186,7 +186,7 @@ function enviarWhatsappIndex(index) {
         `*Data:* ${r.data}\n\n` +
         `*Peças Solicitadas:*\n${listaFormatada}`;
 
-    const url = `https://wa.me/5531992279677?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/5531991449604?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
 
