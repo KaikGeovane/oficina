@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica TurboCar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="./img/image-removebg-preview.png" class="logo" alt="Logo JC Centro Automotivo">
+    <h1>JC Centro Automotivo</h1>
+
+  </header>
+
+  <main>
+    <section class="controle-pecas container" id="pecas-completo">
+      <div class="heading">
+        <h2>Folha de Orçamento</h2>
+
+      </div>
+
+      <form id="controleFormCompleto">
+
+        <div class="input-row">
+          <label for="cliente">Nome do cliente</label>
+          <input id="cliente" name="cliente" type="text" placeholder="Ex: Deivid Barriga de chop" required>
+
+          <label for="modelo">Modelo do carro</label>
+          <input id="modelo" name="modelo" type="text" placeholder="Ex: Honda" required>
+
+          <label for="placa">Placa</label>
+          <input type="text" id="placa" maxlength="7" placeholder="Ex: ABC1D23">
+          <label for="ano">Ano</label>
+          <input type="text" id="ano" maxlength="4" placeholder="Ex: 2025">
+
+          <label for="km">KM do Carro</label>
+          <input id="km" name="km" type="text" placeholder="Digite a quilometragem do carro" required>
+        </div>
+      
+
+
+
+
+      <!-- MOTOR -->
+      <div class="categoria">
+        <h3>Motor</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bloco do motor"> Bloco do motor</label>
+            <input type="number" class="peca-quantidade" min="1" value="1">
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cabeçote"> Cabeçote</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pistão"> Pistão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Anel de pistão"> Anel de pistão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Biela"> Biela</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Virabrequim"> Virabrequim</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cárter"> Cárter</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cabeçote junta"> Junta do cabeçote</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Comando de válvulas"> Comando de válvulas</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Válvulas"> Válvulas</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Assentos de válvula"> Assentos de válvula</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Mola de válvula"> Mola de válvula</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tuchos"> Tuchos</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Correia dentada"> Correia dentada</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tensor de correia"> Tensor de correia</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cadeia de comando"> Corrente de comando</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Polia"> Polia</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Balancins"> Balancins</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Carenagem do motor"> Carenagem do motor</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE ALIMENTAÇÃO / COMBUSTÍVEL -->
+
+      <div class="categoria">
+        <h3>Sistema de Combustível</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bomba de combustível"> Bomba de combustível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de combustível"> Filtro de combustível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Injetores"> Bico injetor / Injetores</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Regulador de pressão"> Regulador de pressão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Linha de combustível"> Linha de combustível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tanque de combustível"> Tanque de combustível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Válvula de retorno"> Válvula de retorno</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE IGNIÇÃO -->
+      <div class="categoria">
+        <h3>Sistema de Ignição</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Velas de ignição"> Velas de ignição</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cabos de vela"> Cabos de vela</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bobina de ignição"> Bobina de ignição</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Módulo de ignição"> Módulo de ignição</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Distribuidor"> Distribuidor</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE ARREFECIMENTO -->
+      <div class="categoria">
+        <h3>Sistema de Arrefecimento</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Radiador"> Radiador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Ventoinha"> Ventoinha / Ventilador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bomba d'água"> Bomba d'água</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Termostato"> Termostato</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Mangueiras do radiador"> Mangueiras do radiador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Reservatório de expansão"> Reservatório de
+              expansão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor de temperatura"> Sensor de temperatura</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE LUBRIFICAÇÃO -->
+      <div class="categoria">
+        <h3>Sistema de Lubrificação</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de óleo"> Filtro de óleo</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bomba de óleo"> Bomba de óleo</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Carter"> Carter / Cárter</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Óleo do motor"> Óleo do motor (troca)</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE ESCAPE -->
+      <div class="categoria">
+        <h3>Sistema de Escape</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Coletor de escape"> Coletor de escape</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Catalisador"> Catalisador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Silencioso"> Silencioso / Escape</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sonda lambda"> Sonda lambda / Sensor de O2</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- TRANSMISSÃO -->
+      <div class="categoria">
+        <h3>Transmissão / Embreagem</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Embreagem"> Disco de embreagem / Embreagem</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Kit de embreagem"> Kit de embreagem</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Platô"> Platô</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Rolamento de embreagem"> Rolamento de embreagem</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Caixa de câmbio"> Caixa de câmbio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Óleo de câmbio"> Óleo de câmbio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Câmbio automático componentes"> Componentes câmbio
+              automático</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- EIXOS / SEMI-ÁXIS -->
+      <div class="categoria">
+        <h3>Eixos e Transmissão Final</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Semi-eixo"> Semi-eixo</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Eixo cardan"> Eixo cardan</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Junta homocinética"> Junta homocinética</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cruzetas"> Cruzeta</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SUSPENSÃO -->
+      <div class="categoria">
+        <h3>Suspensão</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Amortecedor"> Amortecedor</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Mola helicoidal"> Mola helicoidal</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bucha suspensão"> Bucha da suspensão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Braço oscilante"> Braço oscilante</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pivô"> Pivô</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bieleta"> Bieleta / Barra estabilizadora</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- DIREÇÃO -->
+      <div class="categoria">
+        <h3>Direção</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Caixa de direção"> Caixa de direção</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bomba de direção"> Bomba de direção hidráulica</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Haste de direção"> Haste / Terminal de direção</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Barra de direção"> Barra de direção</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cremalheira"> Cremalheira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- FREIOS -->
+      <div class="categoria">
+        <h3>Freios</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pastilha de freio"> Pastilha de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Disco de freio"> Disco de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tambor de freio"> Tambor de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cilindro mestre"> Cilindro mestre</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pinça de freio"> Pinça de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor ABS"> Sensor ABS</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Flexível de freio"> Flexível de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Fluido de freio"> Fluido de freio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- RODAS / PNEUS -->
+      <div class="categoria">
+        <h3>Rodas e Pneus</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pneu"> Pneu</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Câmara"> Câmara (se aplicável)</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Roda / Aro"> Roda / Aro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Parafuso de roda"> Parafuso / Porca de roda</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Calota"> Calota / Tampa</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="TPMS"> Sensor TPMS / Sensor de pressão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ELÉTRICA -->
+      <div class="categoria">
+        <h3>Sistema Elétrico</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Bateria"> Bateria</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Alternador"> Alternador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Motor de arranque"> Motor de arranque</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Fusível"> Fusível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Relé"> Relé</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Chicote"> Chicote / Fiação</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Central eletrônica"> Módulo / ECU</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Painel de instrumentos"> Painel de instrumentos</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Interruptor / Botão"> Interruptores / Botões</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ILUMINAÇÃO -->
+      <div class="categoria">
+        <h3>Iluminação</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Farol dianteiro"> Farol dianteiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Farol de neblina"> Farol de neblina</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Lanterna traseira"> Lanterna traseira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pisca / Seta"> Pisca / Seta</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Lâmpadas"> Lâmpadas</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="DRL"> DRL / Luz diurna</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- CARROCERIA -->
+      <div class="categoria">
+        <h3>Carroceria e Estrutura</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Parachoque dianteiro"> Parachoque dianteiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Parachoque traseiro"> Parachoque traseiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Capô"> Capô</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tampa traseira"> Tampa traseira / porta-malas</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Porta dianteira"> Porta dianteira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Porta traseira"> Porta traseira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Retrovisor"> Retrovisor (lateral)</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Retrovisor interno"> Retrovisor interno</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Soleira"> Soleira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- VIDROS -->
+      <div class="categoria">
+        <h3>Vidros e Selantes</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Para-brisa"> Para-brisa</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Vidro dianteiro"> Vidro dianteiro lateral</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Vidro traseiro"> Vidro traseiro lateral</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Máquina de vidro"> Máquina de vidro / motor de
+              vidro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Borracha de vedação"> Borracha de vedação /
+              guarnição</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- INTERIOR -->
+      <div class="categoria">
+        <h3>Interior e Conforto</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Banco dianteiro"> Banco dianteiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Banco traseiro"> Banco traseiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Estofamento"> Estofamento / capa</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cinto de segurança"> Cinto de segurança</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Airbag"> Airbag</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Painel"> Painel central</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Volante"> Volante</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Alavanca de câmbio"> Alavanca de câmbio</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- HVAC -->
+      <div class="categoria">
+        <h3>Ar Condicionado / Ventilação</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Compressor AC"> Compressor do ar condicionado</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de cabine"> Filtro de cabine / pólen</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Condensador"> Condensador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Evaporador"> Evaporador</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Válvula de expansão"> Válvula de expansão</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SISTEMA DE SEGURANÇA -->
+      <div class="categoria">
+        <h3>Segurança</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cinto de segurança dianteiro"> Cinto de segurança
+              dianteiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Cinto de segurança traseiro"> Cinto de segurança
+              traseiro</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Airbag lateral"> Airbag lateral</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="ABS"> Sistema ABS</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="TRC"> Controle de tração / estabilidade</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SENSORES -->
+      <div class="categoria">
+        <h3>Sensores e Atuadores</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor de temperatura"> Sensor de temperatura</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor de pressão de óleo"> Sensor de pressão de
+              óleo</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor MAP"> Sensor MAP</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor de rotação"> Sensor de rotação (RPM)</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Atuador marcha lenta"> Atuador de marcha lenta</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- JUNTAS, VEDAÇÕES E PEÇAS PEQUENAS -->
+      <div class="categoria">
+        <h3>Juntas, Selos e Peças pequenas</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Junta do cabeçote"> Junta do cabeçote</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Retentor do virabrequim"> Retentor do virabrequim</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Selo da bomba de água"> Selo / junta bomba d'água</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Anéis"> Anéis</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Abraçadeira"> Abraçadeira</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Parafuso"> Parafuso / Porca / Arruela</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- FILTROS -->
+      <div class="categoria">
+        <h3>Filtros</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de ar"> Filtro de ar</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de óleo"> Filtro de óleo</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de combustível"> Filtro de combustível</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Filtro de cabine"> Filtro de cabine</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ACESSÓRIOS E PEÇAS DIVERSAS -->
+      <div class="categoria">
+        <h3>Acessórios e Diversos</h3>
+        <div class="pecas-grid">
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Kit de iluminação"> Kit de iluminação</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Tapetes"> Tapetes</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Rádio"> Rádio / Central multimídia</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Alarme"> Alarme / Sensor de estacionamento</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Sensor de estacionamento"> Sensor de
+              estacionamento</label>
+            <input type="number" class="peca-quantidade" min="1" value="1" >
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- MANUAL / INSPEÇÃO -->
+      <div class="categoria">
+        <h3>Manutenção e Inspeção</h3>
+        <div class="pecas-grid">
+          <label><input type="checkbox" name="pecas" value="Correia acessória"> Correia acessória</label>
+          <label><input type="checkbox" name="pecas" value="Correia dentada troca"> Troca correia dentada</label>
+          <label><input type="checkbox" name="pecas" value="Alinhamento"> Alinhamento</label>
+          <label><input type="checkbox" name="pecas" value="Balanceamento"> Balanceamento</label>
+          <label><input type="checkbox" name="pecas" value="Troca óleo"> Troca de óleo</label>
+        </div>
+      </div>
+
+      <!-- BOTÕES -->
+      <div class="actions">
+        <button type="submit" class="btn-salvar">Salvar Seleção</button>
+        <button type="button" id="verRegistros" class="btn-ver">Ver Registros Salvos</button>
+        <button type="button" id="limparRegistros" class="btn-limpar">Limpar Histórico</button>
+      </div>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+      <div id="registrosSalvos" class="registros"></div>
+    </section>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JC Centro Automotivo</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
