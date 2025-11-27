@@ -7,8 +7,28 @@ body {
   color: #000000;
   line-height: 1.4;
 }
-header h1 {
-  text-align: center;
+.print-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.print-header img {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.print-header h1 {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 26px;
 }
 
 /* Container */

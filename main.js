@@ -186,7 +186,7 @@ function enviarWhatsappIndex(index) {
         `*Data:* ${r.data}\n\n` +
         `*Peças Solicitadas:*\n${listaFormatada}`;
 
-    const url = `https://wa.me/5531991449604?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/5531987194555?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
 
@@ -240,7 +240,6 @@ if(limparBtn) {
    4. FUNÇÃO GERADORA DE PDF/IMPRESSÃO
    ============================================================ */
 function imprimirRelatorio(dados) {
-    // Categorias para organizar a impressão
     const categoriasMap = {
         'Motor': ['Bloco do motor', 'Cabeçote', 'Pistão', 'Anel de pistão', 'Biela', 'Virabrequim', 'Cárter', 'Junta do cabeçote', 'Comando de válvulas', 'Válvulas', 'Assentos de válvula', 'Mola de válvula', 'Tuchos', 'Correia dentada', 'Tensor de correia', 'Corrente de comando', 'Polia', 'Balancins', 'Carenagem do motor'],
         'Combustível': ['Bomba de combustível', 'Filtro de combustível', 'Bico injetor', 'Injetores', 'Regulador de pressão', 'Linha de combustível', 'Tanque de combustível', 'Válvula de retorno'],
@@ -284,7 +283,7 @@ function imprimirRelatorio(dados) {
         <style>
             body { font-family: Helvetica, Arial, sans-serif; padding: 40px; color: #333; }
             header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
-            h1 { margin: 0; color: #d32f2f; }
+            .logo { width: 200px; margin-bottom: 10px; }
             .info { background: #f4f4f4; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
             .info p { margin: 5px 0; font-size: 14px; }
             .categoria-print h4 { margin-bottom: 5px; border-bottom: 1px solid #ccc; color: #555; padding-top: 10px; }
@@ -296,8 +295,8 @@ function imprimirRelatorio(dados) {
     </head>
     <body>
         <header>
-            <h1>JC Centro Automotivo</h1>
-            <p>Tel: (31) 99227-9677</p>
+            <img class="logo-jc" src=" https://kaikgeovane.github.io/oficina/" alt="Logo JC">
+            <p>Tel: (31) 987194555</p>
         </header>
 
         <div class="info">
@@ -323,6 +322,7 @@ function imprimirRelatorio(dados) {
     const janela = window.open('', '', 'width=900,height=700');
     janela.document.write(conteudo);
     janela.document.close();
+
     setTimeout(() => {
         janela.print();
     }, 500);
