@@ -295,7 +295,7 @@ function imprimirRelatorio(dados) {
     </head>
     <body>
         <header>
-            <img class="logo-jc" src=" https://kaikgeovane.github.io/oficina/" alt="Logo JC">
+            <img class="logo-jc" src="img/logo-jc.png" alt="Logo JC">
             <p>Tel: (31) 987194555</p>
         </header>
 
