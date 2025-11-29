@@ -69,6 +69,7 @@ body {
   border: 1px solid #dcdfe6;
   font-size: 15px;
   background: #fff;
+  text-transform: uppercase;
 }
 
 /* Categoria block */
@@ -288,4 +289,57 @@ label {
 .registro-item .btn-imprimir-item:hover {
   background-color: #500303; /* mesmo hover */
 }
+/* ======== LAYOUT DE IMPRESSÃO ======== */
+@media print {
+
+    body {
+        margin: 10mm;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Esconde tudo do site que não deve aparecer na impressão */
+    header, footer, .no-print, button {
+        display: none !important;
+    }
+
+    /* Container principal da folha */
+    .folha-impressao {
+        width: 100%;
+        border: 1px solid #000;
+        padding: 8px;
+    }
+
+    /* Logo centralizada e em tamanho correto */
+    .logo-topo {
+        display: block;
+        margin: 0 auto 5px auto;
+        width: 260px; /* ajuste conforme você quiser */
+    }
+
+    /* Cabeçalho com textos igual o bloco físico */
+    .top-info {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    /* Tabela igual ao talão */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+
+    table th, table td {
+        border: 1px solid #000;
+        padding: 4px;
+    }
+
+    .assinatura-area {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
 

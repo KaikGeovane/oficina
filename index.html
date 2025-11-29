@@ -31,8 +31,11 @@
           <label for="modelo">Modelo do carro</label>
           <input id="modelo" name="modelo" type="text" placeholder="Ex: Honda" required>
 
+          <label for="modelo">Cor do carro</label>
+          <input id="cor" name="cor" type="text" placeholder="Ex: Preto" required>
+
           <label for="placa">Placa</label>
-          <input type="text" id="placa" maxlength="7" placeholder="Ex: ABCD23">
+          <input type="text" id="placa" maxlength="7" placeholder="Ex: ABC1D23">
           <label for="ano">Ano</label>
           <input type="text" id="ano" maxlength="4" placeholder="Ex: 2025">
 
@@ -427,7 +430,12 @@
           </div>
 
           <div class="peca-item">
-            <label><input type="checkbox" name="pecas" value="Pivô"> Pivô</label>
+            <label><input type="checkbox" name="pecas" value="Pivô"> Pivô/Esquerdo</label>
+            <input type="number" class="peca-quantidade" min="" value="" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pivô"> Pivô/Direito</label>
             <input type="number" class="peca-quantidade" min="" value="" >
           </div>
 
@@ -466,6 +474,15 @@
           </div>
 
           <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Barra de direção"> Leque de direção/Esquerdo</label>
+            <input type="number" class="peca-quantidade" min="" value="" >
+          </div>
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Barra de direção"> Leque de direção/Direito</label>
+            <input type="number" class="peca-quantidade" min="" value="" >
+          </div>
+
+          <div class="peca-item">
             <label><input type="checkbox" name="pecas" value="Cremalheira"> Cremalheira</label>
             <input type="number" class="peca-quantidade" min="" value="" >
           </div>
@@ -500,7 +517,12 @@
           </div>
 
           <div class="peca-item">
-            <label><input type="checkbox" name="pecas" value="Pinça de freio"> Pinça de freio</label>
+            <label><input type="checkbox" name="pecas" value="Pinça de freio"> Pinça de freio/Esquerdo</label>
+            <input type="number" class="peca-quantidade" min="" value="" >
+          </div>
+
+          <div class="peca-item">
+            <label><input type="checkbox" name="pecas" value="Pinça de freio"> Pinça de freio/Direito</label>
             <input type="number" class="peca-quantidade" min="" value="" >
           </div>
 
@@ -834,17 +856,7 @@
         <h3>Segurança</h3>
         <div class="pecas-grid">
 
-          <div class="peca-item">
-            <label><input type="checkbox" name="pecas" value="Cinto de segurança dianteiro"> Cinto de segurança
-              dianteiro</label>
-            <input type="number" class="peca-quantidade" min="" value="" >
-          </div>
-
-          <div class="peca-item">
-            <label><input type="checkbox" name="pecas" value="Cinto de segurança traseiro"> Cinto de segurança
-              traseiro</label>
-            <input type="number" class="peca-quantidade" min="" value="" >
-          </div>
+         
 
           <div class="peca-item">
             <label><input type="checkbox" name="pecas" value="Airbag lateral"> Airbag lateral</label>
